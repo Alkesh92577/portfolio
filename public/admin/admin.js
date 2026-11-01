@@ -2,7 +2,7 @@
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   // Set this to the deployed Render backend URL before publishing on Vercel.
-  const API_BASE = (window.PORTFOLIO_API_BASE || 'https://YOUR-RENDER-SERVICE.onrender.com').replace(/\/$/, '');
+  const API_BASE = (window.PORTFOLIO_API_BASE || 'https://portfolio-p7nj.onrender.com').replace(/\/$/, '');
   let data = null, tab = 'profile', mustChange = false;
 
   async function api(url, method = 'GET', body) {
