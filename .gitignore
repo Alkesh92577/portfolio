@@ -1,0 +1,17 @@
+
+node_modules/
+
+.env
+.env.*
+!.env.example
+
+data/.secret
+data/db.json
+
+uploads/
+
+*.log
+.DS_Store
+
+.idea/
+.vscode/
