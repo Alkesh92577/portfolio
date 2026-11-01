@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Admin Panel</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+
+<!-- Login -->
+<div id="loginView" class="login-wrap" hidden>
+  <form id="loginForm" class="login-card">
+    <h1>Admin Login</h1>
+    <p class="muted">Sign in to manage your portfolio</p>
+    <label>Username<input name="username" required autocomplete="username"></label>
+    <label>Password<input name="password" type="password" required autocomplete="current-password"></label>
+    <p class="err" id="loginErr"></p>
+    <button class="btn primary" type="submit">Sign in</button>
+    <a href="/" class="back">← Back to portfolio</a>
+  </form>
+</div>
+
+<!-- App -->
+<div id="appView" class="app" hidden>
+  <aside class="sidebar">
+    <div class="brand">⚙ Admin</div>
+    <nav id="tabs">
+      <button data-tab="profile" class="active">👤 Profile</button>
+      <button data-tab="skills">⚡ Skills</button>
+      <button data-tab="projects">🗂 Projects</button>
+      <button data-tab="experience">💼 Experience</button>
+      <button data-tab="education">🎓 Education</button>
+      <button data-tab="messages">✉ Messages <b id="unread" hidden></b></button>
+      <button data-tab="account">🔒 Account</button>
+    </nav>
+    <div class="side-foot">
+      <a href="/" target="_blank" class="btn ghost sm">View site ↗</a>
+      <button id="logoutBtn" class="btn ghost sm">Logout</button>
+    </div>
+  </aside>
+  <main class="content">
+    <div id="toast" class="toast"></div>
+    <div id="panel"></div>
+  </main>
+</div>
+
+<script src="/admin/admin.js"></script>
+</body>
+</html>

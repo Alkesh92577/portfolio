@@ -1,0 +1,228 @@
+{
+  "profile": {
+    "name": "Alkesh",
+    "title": "Full Stack Developer",
+    "tagline": "I turn ideas into powerful, scalable and beautiful web applications.",
+    "roles": "Full Stack Developer, Software Engineer, Web Developer, Problem Solver",
+    "about": "I'm Alkesh Kumar, a passionate Full Stack Developer who loves transforming creative ideas into modern, responsive, and user-friendly web applications.\n\nI work with technologies like React, JavaScript, Java, Spring Boot, Node.js, Python, and MySQL to build complete web solutions, from intuitive frontend interfaces to powerful backend systems.\n\nI enjoy solving real-world problems, learning emerging technologies, and developing projects that combine functionality, performance, and great design.\n\nMy goal is to continuously grow as a software developer and create impactful digital products that make a difference.",
+    "highlights": [
+      {
+        "icon": "🎨",
+        "title": "Frontend Development",
+        "text": "Building modern, responsive and interactive user interfaces using React, JavaScript, HTML and CSS."
+      },
+      {
+        "icon": "⚙️",
+        "title": "Backend Development",
+        "text": "Developing secure REST APIs, server-side applications and efficient database integrations using Java, Spring Boot and Node.js."
+      },
+      {
+        "icon": "🚀",
+        "title": "Full Stack Solutions",
+        "text": "Creating complete end-to-end web applications with clean architecture, optimized performance and scalable technologies."
+      },
+      {
+        "icon": "💡",
+        "title": "Problem Solving",
+        "text": "Turning complex challenges into practical solutions through logical thinking, creativity and continuous learning."
+      }
+    ],
+    "photo": "/uploads/1793500802683-d6b3b7ad.png",
+    "resume": "/uploads/1793545446519-109e633f.pdf",
+    "email": "alkesh6420@gmail.com",
+    "phone": "",
+    "location": "India",
+    "github": "https://github.com/Alkesh92577",
+    "linkedin": "https://www.linkedin.com/in/alkesh-164a4b289/",
+    "twitter": "",
+    "website": "",
+    "available": true,
+    "stats": [
+      {
+        "label": "Years Learning & Development",
+        "value": "3+"
+      },
+      {
+        "label": "Projects Built",
+        "value": "10+"
+      },
+      {
+        "label": "Technologies Mastered",
+        "value": "5+"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "id": "s2",
+      "name": "React.js",
+      "level": 85,
+      "category": "Frontend"
+    },
+    {
+      "id": "s3",
+      "name": "Node.js & Express",
+      "level": 80,
+      "category": "Backend"
+    },
+    {
+      "id": "s4",
+      "name": "MongoDB",
+      "level": 70,
+      "category": "Database"
+    },
+    {
+      "id": "s5",
+      "name": "Git & GitHub",
+      "level": 85,
+      "category": "Tools"
+    },
+    {
+      "id": "sc567f156",
+      "name": "HTML5 & CSS3",
+      "level": 90,
+      "category": "Frontend"
+    },
+    {
+      "id": "s136f5635",
+      "name": "Tailwind CSS",
+      "level": 60,
+      "category": "Frontend"
+    },
+    {
+      "id": "sf3ccc6ce",
+      "name": "Java",
+      "level": 90,
+      "category": "Backend"
+    },
+    {
+      "id": "s17ea102d",
+      "name": "Spring Boot",
+      "level": 80,
+      "category": "Backend"
+    },
+    {
+      "id": "s2f31d54c",
+      "name": "Python",
+      "level": 60,
+      "category": "Programming"
+    },
+    {
+      "id": "s8d7b0643",
+      "name": "MySQL",
+      "level": 85,
+      "category": "Database"
+    },
+    {
+      "id": "s846091ed",
+      "name": "REST API Development",
+      "level": 80,
+      "category": "Backend"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p55b42b16",
+      "title": "AI Career Recommendation System",
+      "description": "An intelligent career guidance platform that recommends suitable career paths based on users' skills, interests and preferences using machine learning.",
+      "tech": [
+        "React.js",
+        "Spring Boot",
+        "Python",
+        "MySQL",
+        "Machine Learning"
+      ],
+      "image": "",
+      "live": "",
+      "repo": "",
+      "featured": false
+    },
+    {
+      "id": "p95719e13",
+      "title": "FindIt – Lost & Found Platform",
+      "description": "A full-stack platform that helps users report lost and found items, submit claims, communicate securely and reconnect belongings with their rightful owners.",
+      "tech": [
+        "React.js",
+        "Spring Boot",
+        "MySQL",
+        "REST API"
+      ],
+      "image": "/uploads/1793547148075-7c7d76d1.png",
+      "live": "https://findit-lost-found-one.vercel.app/",
+      "repo": "",
+      "featured": false
+    },
+    {
+      "id": "pbff6cc03",
+      "title": "Convertly – Online File Converter",
+      "description": "A web-based conversion tool that allows users to convert documents and files between formats, including PDF, Word, Excel and images, through a simple and user-friendly interface.",
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Node.js",
+        "Express.js"
+      ],
+      "image": "/uploads/1793547161396-4b7957e5.png",
+      "live": "https://convertly-ochre-ten.vercel.app/",
+      "repo": "",
+      "featured": false
+    },
+    {
+      "id": "p484bb08a",
+      "title": "ChatGPT & Claude for Beginners – AI eBook",
+      "description": "Created a comprehensive beginner-friendly eBook that teaches readers how to use ChatGPT and Claude effectively. It covers AI tools, practical prompting techniques, real-world use cases, productivity tips and hands-on examples. Also developed a dedicated website to showcase and sell the eBook online.",
+      "tech": [
+        "Claude AI",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Vercel",
+        "Razorpay"
+      ],
+      "image": "/uploads/1793547131608-b5066df1.png",
+      "live": "https://ai-beginners-ebook.vercel.app/",
+      "repo": "",
+      "featured": false
+    }
+  ],
+  "experience": [
+    {
+      "id": "e1",
+      "role": "Full Stack Developer (Project-Based)",
+      "company": "Personal & Freelance Projects",
+      "start": "",
+      "end": "",
+      "description": "• Developed full-stack web applications using React.js, Java, Spring Boot and Node.js.\n• Designed and implemented REST APIs, database integration and responsive user interfaces.\n• Worked with MySQL and MongoDB for efficient data management.\n• Built real-world projects including AI Career Recommendation System and FindIt – Lost & Found Platform.\n• Used Git and GitHub for version control and project management."
+    }
+  ],
+  "education": [
+    {
+      "id": "d1",
+      "degree": "B.Tech in Computer Science",
+      "college": "",
+      "school": "Poornima University",
+      "percentage": "7.2",
+      "start": "2024",
+      "end": "2027"
+    },
+    {
+      "id": "df17ae6f2",
+      "degree": "10th ",
+      "college": "B. V. M. Sr. Sec. School Bhitwara, Pali Rajasthan",
+      "school": "RBSE",
+      "percentage": "88%",
+      "start": "2021",
+      "end": ""
+    },
+    {
+      "id": "da7f847e3",
+      "degree": "12th PCM",
+      "college": "B. V. M. Sr. Sec. School Bhitwara, Pali Rajasthan",
+      "school": "RBSE",
+      "percentage": "75%",
+      "start": "2023",
+      "end": ""
+    }
+  ]
+}

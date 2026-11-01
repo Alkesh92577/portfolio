@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+<meta name="description" content="Personal portfolio">
+<meta name="theme-color" content="#070b14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="loading">
+
+<!-- Preloader -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-inner">
+    <div class="pre-logo" id="preLogo">•</div>
+    <div class="pre-bar"><i></i></div>
+  </div>
+</div>
+
+<div class="progress" id="progress"></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="logo" id="logo">Portfolio</a>
+    <nav class="links" id="links">
+      <a href="#about" data-sec="about">About</a>
+      <a href="#skills" data-sec="skills">Skills</a>
+      <a href="#projects" data-sec="projects">Projects</a>
+      <a href="#experience" data-sec="experience">Experience</a>
+      <a href="#contact" data-sec="contact">Contact</a>
+      <a href="#contact" class="btn primary sm nav-cta">Hire me</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">◐</button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="blob b1"></div><div class="blob b2"></div>
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="badge anim" id="availBadge" hidden><i></i> Available for work</span>
+        <p class="hello anim">Hi, I'm</p>
+        <h1 id="heroName" class="split">…</h1>
+        <h2 class="role anim"><span id="typed" class="gradient-text"></span><span class="caret"></span></h2>
+        <p class="tagline anim" id="heroTagline"></p>
+        <div class="cta anim">
+          <a href="#contact" class="btn primary magnetic">Hire me <span class="arr">→</span></a>
+          <a href="#projects" class="btn ghost magnetic">View work</a>
+          <a id="resumeBtn" class="btn ghost magnetic" hidden download>Resume ↓</a>
+        </div>
+        <div class="socials anim" id="heroSocials"></div>
+      </div>
+
+      <div class="hero-photo anim-scale">
+        <div class="photo-wrap" id="tiltPhoto">
+          <div class="ring"></div>
+          <div class="photo-frame">
+            <img id="photo" alt="Profile photo" hidden>
+            <div id="photoFallback" class="photo-fallback">👤</div>
+          </div>
+          <div class="float-badges" id="floatBadges"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container"><div class="stats" id="stats"></div></div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" id="marquee" aria-hidden="true"><div class="marquee-track" id="marqueeTrack"></div></div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="head reveal"><p class="eyebrow">About me</p><h3 class="section-title">Developer who cares about the details</h3></div>
+      <div class="about-grid">
+        <aside class="about-card reveal from-left">
+          <div class="about-photo"><img id="aboutPhoto" alt="" hidden><div id="aboutPhotoFallback" class="photo-fallback sm">👤</div></div>
+          <h4 id="aboutName"></h4>
+          <p class="muted" id="aboutRole"></p>
+          <ul class="info-list" id="aboutInfo"></ul>
+          <div class="about-cta">
+            <a href="#contact" class="btn primary sm">Let's talk</a>
+            <a id="aboutResume" class="btn ghost sm" hidden download>Download CV</a>
+          </div>
+        </aside>
+        <div class="about-body">
+          <div id="aboutText" class="about-text reveal from-right"></div>
+          <div class="highlights" id="highlights"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <div class="head reveal"><p class="eyebrow">Skills</p><h3 class="section-title">Technologies I work with</h3></div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="head reveal"><p class="eyebrow">Projects</p><h3 class="section-title">Selected work</h3></div>
+      <div class="filters reveal" id="filters"></div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section alt">
+    <div class="container two-col">
+      <div>
+        <div class="head reveal"><p class="eyebrow">Experience</p><h3 class="section-title">Where I've worked</h3></div>
+        <div class="timeline" id="expTimeline"></div>
+      </div>
+      <div>
+        <div class="head reveal"><p class="eyebrow">Education</p><h3 class="section-title">Where I've studied</h3></div>
+        <div class="timeline" id="eduTimeline"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div class="reveal from-left">
+        <p class="eyebrow">Contact</p>
+        <h3 class="section-title">Let's build something great together</h3>
+        <p class="muted">Have a project in mind, a role to discuss, or just want to say hi? Send a message and I'll get back to you.</p>
+        <ul class="info-list big" id="contactInfo"></ul>
+      </div>
+      <form id="contactForm" class="form card reveal from-right" novalidate>
+        <div class="row">
+          <label>Name<input name="name" required maxlength="100" autocomplete="name" placeholder="Your name"></label>
+          <label>Email<input name="email" type="email" required maxlength="150" autocomplete="email" placeholder="you@example.com"></label>
+        </div>
+        <label>Message<textarea name="message" rows="5" required maxlength="3000" placeholder="Tell me about your project…"></textarea></label>
+        <button class="btn primary" type="submit">Send message <span class="arr">→</span></button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span id="footerText"></span>
+    <div class="socials" id="footerSocials"></div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="/app.js"></script>
+</body>
+</html>
