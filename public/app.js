@@ -301,11 +301,28 @@
     document.body.classList.remove('loading');
     document.body.classList.add('ready');
   }
-  const minWait = new Promise(r => setTimeout(r, reduced ? 0 : 1100));
-  fetch(`${API_BASE}/api/portfolio`).then(r => r.json()).then(render)
-    .catch(() => { $('heroName').textContent = 'Unable to load portfolio'; })
-    .then(() => minWait).then(reveal);
-  setTimeout(reveal, 4000);
+  
+const minWait = new Promise(r => setTimeout(r, reduced ? 0 : 1100));
+
+fetch(`${API_BASE}/api/portfolio`)
+  .then(async response => {
+    if (!response.ok) {
+      throw new Error(`API Error: ${response.status}`);
+    }
+
+    const data = await response.json();
+    console.log("Portfolio data loaded:", data);
+    render(data);
+  })
+  .catch(error => {
+    console.error("Portfolio loading failed:", error);
+    $('heroName').textContent = 'Unable to load portfolio';
+  })
+  .then(() => minWait)
+  .then(reveal);
+
+setTimeout(reveal, 4000);
+
 
   /* ---------------- Contact form ---------------- */
   $('contactForm').addEventListener('submit', async (e) => {
