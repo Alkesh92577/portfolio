@@ -3,7 +3,7 @@
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   // Set this to the deployed Render backend URL before publishing on Vercel.
-  const API_BASE = (window.PORTFOLIO_API_BASE || 'https://YOUR-RENDER-SERVICE.onrender.com').replace(/\/$/, '');
+  const API_BASE = (window.PORTFOLIO_API_BASE || 'https://portfolio-p7nj.onrender.com').replace(/\/$/, '');
   const safeUrl = (u) => (/^(https?:\/\/|\/|mailto:|tel:)/i.test(u || '') ? u : '');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const canHover = matchMedia('(hover: hover)').matches;
