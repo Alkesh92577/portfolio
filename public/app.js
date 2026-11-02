@@ -8,6 +8,9 @@
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const canHover = matchMedia('(hover: hover)').matches;
 
+// Portfolio deployment update
+
+
   /* ---------------- Theme / nav / menu ---------------- */
   const root = document.documentElement;
   root.dataset.theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
